@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinbase</title>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+nav{
+    height: 60px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid orangered; */
+}
+nav>h2{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    font-weight: 700;
+}
+nav p>a{
+    text-decoration: none;
+    color: rgb(42, 39, 185);
+}
+.aside{
+    height: 400px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+.aside h2{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+.aside p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aside button{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(69, 69, 201);
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+aside{
+    height: 130px;
+    width: 130px;
+    /* border: 1px solid orangered; */
+}
+aside img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+picture{
+    height: 500px;
+    width: 60%;
+    /* border: 1px solid orangered; */
+}
+picture img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.container>p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+main{
+    height: 300px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid orangered; */
+}
+.maga{
+    height: inherit;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+.tap{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid red; */
+}
+.tap h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tap p{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tap a{
+    text-decoration: none;
+    color: blue;
+}
+.bic{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid blue; */
+}
+.bic img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+figure{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+    gap: 20px;
+    /* border: 1px solid green; */
+}
+.iconDiv{
+    height: 40px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+}
+.icon{
+    height: 100%;
+    width: 40px;
+    /* border: 1px solid black; */
+}
+.icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.text{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.text p{
+    font-size: 16px;
+}
+.text p>a{
+    text-decoration: none;
+    color: blue;
+}
+.coinbasePackage{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.coinbasePackage a{
+    text-decoration: none;
+    color: blue;
+}
+figure>p{
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        padding: 10px;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .aside{
+        width: 100%;
+    }
+    picture{
+        width: 100%;
+    }
+    main{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: left;
+        justify-content: left;
+    }
+    .maga{
+        width: 100%;
+        /* border: 1px solid; */
+        align-items: start;
+        gap: 10px;
+    }
+    .tap p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .text{
+        width: 100%;
+    }
+    .text p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    figure{
+        width: 100%;
+    }
+    figure span{
+        text-align: center;
+    }
+    figure>p{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h2>Coinbase</h2>
+            <p><span>1/24/25</span> | <a href="">view in the browser</a></p>
+        </nav>
+        <div class="aside">
+            <aside><img src="/Images/coinbase logo.png" alt=""></aside>
+            <h2>Welcome to Coinbase</h2>
+            <p>You just joined the world’s most trusted crypto exchange, nice work. We’re very excited to have you on
+                board. To get started, all you need to do is complete a few simple steps.
+            </p>
+            <button>Get started</button>
+        </div>
+        <picture><img src="/Images/coinbase_welcome_header_720x400px.gif" alt=""></picture>
+        <p>Three things you can do with a Coinbase <br> account today:</p>
+        <main>
+            <div class="maga">
+                <div class="bic"><img src="/Images/coinbase_icon_Trade_x2_1.png" alt=""></div>
+                <div class="tap">
+                    <h2>Start trading today</h2>
+                    <p>Buy as much - or as little - cryptocurrency as you like, all in a few taps.</p>
+                    <a href="https://links.coinbase.com/a/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KNIp-QJjFbBPgMW_xH0qpNLtOp9tqPPplzcko-EW90EmNxmW-l3EwOPV20XOJd7IV1ljkb2h5bh-LrX1BEh8JNE9JtckpVC-IqiYLXSGwWwqIKAQyuKinXdRzCVWWGb8mcPGOx3NJzLPoPVtPpFzZUv5-Ss53tFb7lCznws2uoIFJszeyX7X2mD0NCryEKesdltuJTiaUuv0V0pqHRUOlgZcW41kSy_FzX07wUsHlVedi_Jw1YPzD6Kimksn-VD_O0JKpY7p4WhjmW3HH146v3RPGKmTejFSSZSN259i3o1vxaLdN2NxCQIRZKsj7ytmaA%3D%3D">Start trading ⟶</a>
+                </div>
+            </div>
+            <div class="maga">
+                <div class="bic"><img src="/Images/coinbase_icon_EarnRewards_x2.png" alt=""></div>
+                <div class="tap">
+                    <h2>Stake to earn rewards¹</h2>
+                    <p>Earn up to 9% APY for eligible assets you already hold.</p>
+                    <a href="https://links.coinbase.com/a/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KBe-S7Iwxt4ghZf8NNn4tVmOAVwq6OGllsz_cW-JrGWZAKsdSZcCCRKuaRMv1AOc_AxbQDjdACZu7p6w-JgDV2kv0yMZK6FIZRpFnYsim4Zv79ZlbFkYvtdjNYlaukn4G1vsmEXdtHm71KVfyJ4YTlcdJxQ-mcnJxChtV65NT-70OtO2bots6KCj3d1xUQoQuwnmobErVlhBOoIvVZEDMnKUzSQLLWkJ4mocwlfqWY2YMfXyM3Xb-9e12Y3QWyMpWA_aoIrsnXkf_DTOuH1Qzyr4dtjM4Jbe1s2kogR81vwJ">Start earning ⟶</a>
+                </div>
+            </div>
+            <div class="maga">
+                <div class="bic"><img src="/Images/coinbase_icon_Earn_x2.png" alt=""></div>
+                <div class="tap">
+                    <h2>Get paid to learn</h2>
+                    <p>You can earn cryptocurrencies just by learning about them on Coinbase.²</p>
+                    <a href="https://links.coinbase.com/a/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KNIp-QJjFbBPgMW_xH0qpNJdAqgri0LLOEZ5hfWIq8VPevcUXBWPosrxTEmB75FPRHdj8yZ8x5yzRNjDstAo8iq_mNl9oPIS8l9u90b8SqgDfNfhDrfg2zDfg2FOmXKaJatCOTX5bjGc3Sf1_WFckAzQsfMyqwKKkxV6mXc5ImlGRDF2_ggZOpiGnHyz0ZQvIwhgUAdttOKriYt4VUDP7Zxzz3WssYKxXEosjRkwTmbS9iKRsOld1PM8jEVcie7LRuwiwtjweRYbdJgML-OcDevFFwZWnKZ0pUT6vvsYyX3Bp303g3La2ZeacZ0h5fUJWA%3D%3D">Start learning ⟶</a>
+                </div>
+            </div>
+        </main>
+        <figure>
+            <div class="iconDiv">
+                <div class="icon"><a href="https://links.coinbase.com/u/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KNuieNSoPt6lH7UuTqdQLMIbLulGajnKvhmTPhhXmCWIQJaCl2Zq1DGFAiX1-Lv18B06_Zfvosh8j_EHJdl32ep7-OHA38CK_RHDk1VJtszDmkSUfL4VGrPMDfBQJHgfT3WhBRey3GOlhW3qM5KcJnA19B5GvpVUhDiWdIFRtQzkC0wVzQohQYmQceZLgQKbWnJvchN8CoofsYeVIL7f5Vg8yuXrGo503sf11lc64LupX-Z3pfpKQ4MfZpcKgA8w4xrCbxe_pHf4YI-U969Q9PB-hIFEHQ32k-CVzeJzAjKyOayDMuALMV9OsvbgZAVahg%3D%3D"><img src="/Images/twitter@2x.png" alt=""></a></div>
+                <div class="icon"><a href="https://links.coinbase.com/u/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KCIehwgVu2GjB1PVMgCouVCqjVWBC8f4I7zR2G_YIZd5ziTN5tq0SvRtggDNBPwJxRxhzqHV5U9HMIvw0G20kvgu-jrNXx4xWA-j6vFQma1ws0D3hy_ijbjHjYKyxb37oFzyCgSIZp-xnxVPL0YiURmNA5J6WMD8ZI4XB2QpG6gatspTFwhEmjOJH5eGMq-hGxz3Qdn5MrERN_nY7KkhdoZBINVptDXBnz3dA6GMeWm4t39Z1qK-v5sLCckuXzSv15TPJZD4M94LQZjzCv4KUD8VbMaNvW2Fmz7uTy3BRzEio_WKqAysHFJ13SYZ3xXAbg%3D%3D"><img src="/Images/instagram@2x.png" alt=""></a></div>
+                <div class="icon"><a href="https://links.coinbase.com/u/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KP9Nlwcmi1cnoDw6VNjtGQuF8UMuy3lP-8JLr9GV5QPxmYROJqt_ZgW6_TA6oBAVdKrA_OX2dLMOEoA4hLSu2Dm1Sn84MabGvDN4pdB5CnbHsCKycgBttSNi53OAFwETyU4Mj3pL6gs00QJP49_zEQyt-1RM4QOhxz4zZcJm1tjtGIPOJblcyqADvcyMlfnmcGFE_Vzom4Lc7CzWTDxE-iiFucwBnH6cotti56UuIJBw8BoH8ShZ_2_eFVBVCSkMhYbG2SsthQLi7vTgGAPcTGpgvQiJ7m_vluk-ctGP6AnZ_x70UHjSZskXGNH4dkM6tg%3D%3D"><img src="/Images/facebook@2x.png" alt=""></a></div>
+                <div class="icon"><a href="https://links.coinbase.com/u/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KCTvwECLXiFeP2LF0WsN0RtDfD9Xr_3tjJ4grZh7WoPj-qhlN-6JNk3B15saxTK2ZyNz9qNpHc76P1_7NOra1HN_PL57fDF8GH2I0oZYP08K5smgd1ITbfPsP5qD-gl7Eh5pBq8va-L7id2xsQFBJjRHQa-EAmqOVWZfroqfV7_cZGCgdqcx2sevwz83RKv-t88UrcK-2-g9fln5OSbXuGIQQ9NPU8u9RE4aQkv19xHNF-FQ8L3ZV8oGsr0uYSshz2Fys7MxsSyMP-zzVL-h1_1cFrUR7GSoMnFiLTcAP7XHnRwJcPVhY7__4655Zvf7Fg%3D%3D"><img src="/Images/tiktok@2x.png" alt=""></a></div>
+            </div>
+            <div class="text">
+                <p>¹The rewards rate is based on the estimated protocol rate, which is subject to change. Customers will
+                    be able to see the latest applicable rates directly within their accounts. Enrollment in staking is
+                    available only in eligible jurisdictions and for eligible networks
+                </p>
+                <p>²Limited while supplies last and amounts offered for each quiz may vary. Must verify ID to be
+                    eligible and complete quiz to earn. Customers may only earn once per quiz. Coinbase reserves the
+                    right to cancel the learning rewards offer at anytime. Coinbase receives fees from asset issuers in
+                    connection with creating and distributing asset and/or protocol specific learning rewards content. <a href="https://links.coinbase.com/u/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KNyMSt-bdHTWM4aILjMWK9TOb44b5SZPoXHv9FUZzm6pHCtwjJWq49MyQksPrS9_LThJVblQ_TgDOY540Q7PDvAvYj4Ra7gBInLuUuSAfscP_kSq4a0ZgH7Ey7QjohfjDJGqpC1_pX336hJnBKWERLD0-jCKKVqvE0NsRupTaH6bP_vR56JcACA2BG3sf56u_0ApzGArKmtEBpK9tdqho4SJune3mE4yWEnyzkXt2Bhwz0fHMlA9cxa-h4baAejVj1vHudsuYwt240YUwywDr8fp3m4iymy3u8w0r3FhDzcYYw_u53NB7IVIIwWXHoCwvLAGMUlNRk3EQoEHL1qjc5sBrXRfcB9NbeW0Xktb9GCaysWArND59EPhMwFdVJRQOoYOp6dmbrIMv-M_SQbWDiV0UTWJydlWslgH94OuXXFr">learn More</a>
+                </p>
+            </div>
+            <div class="coinbasePackage">
+                <div class="circle"><img src="/Images/footer_coinbase_logo_icon_1.png" alt=""></div>
+                <p>© Coinbase 2025 </p>
+                <a href="https://links.coinbase.com/a/click?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KNIp-QJjFbBPgMW_xH0qpNLe21mdIOCq46Tnbm-T60aKv0GKR_qS7GXHE6GQ_p6mYFoG6Alw-Qe9Y6p1NcpXBOYGAJ0YyM5pxQg4Ivj9sO4NDlL_AcUlg5VSbeJCyS9PvPFM80PnuBHtNPe9B3xl_AdIStK4NzJhSMuu0eZdobWzHX0v4s-Ai9gN5VEaq7cFAHgtB2GdCUTCdidivxg18ChpKucpFmWIhCRmZzOjrBT4BSAZpzbnceqWTK6uVxLt4vm0yt5DKxOgCy9DV_t4vKpELnun47Jvw2pNRSzdSxT-">
+                    www.coinbase.com
+                    Get in touch
+                </a>
+            </div>
+            <p>Information provided is for general educational purposes only and is not intended to constitute
+                investment or other advice on financial products. This is not a recommendation to buy or sell any
+                particular digital asset or to use any particular investment strategy. Coinbase makes no representation
+                on the accuracy, suitability, or validity of any information provided.
+            </p>
+            <span>If you no longer wish to receive these emails, unsubscribe <a href="https://links.coinbase.com/e/eh?_t=3aca56371967418192255878e9689713&_m=35778a975c8f448582e6c3e69d02b52b&_e=aVMrt0XifxlbofyAwZm_KKPmirREk0R9bkpJtTOzZr64L4WfwQIm3psWl6QCsK_NV7MHi_8wv-2fjt6DF7vX0NP86Pl9kZd7IGDNvnohHEiRZNNWA7olitmp1pK7jQv2IxXL4V2PaVqLbq4WrouoCPL1H6vVVMCpeWPo3YNoEap8aDIzoQQs13qE2_lr9gXhIr7fwUOHyWEK2UPabRZKD9ssQwEoP7yDvwnwpWlNj8KBdtz_lGeQFnGIG0o8LDtfuWjwGMoldz3DNneNO6lEnxQIz2uBPv4-lWgGiUcZqamYuedqTDOPOyestz6QOgTM7WQ9XsQNwiwnNEefCvngKedkNvQv-5F8IDPLsZqr8-CCkPMzz6CLn71GG1T6v5rT22jKZ2hkyAi4Yb7_GlreJj3n0wy1Ctqte_4H-g_PYgDltRg639DqawBDEc-piojep6LSTCUcOGtoqGbbrIqmrCidwUGHUqzd733e4vNMxXyhnDG_RnypBplPxceS3--H4miaDC33Z5JqfVMsGI-6XqdQ3zwcUkDV6JT6g0udP9sszpBrw-QQTbALiIEZIGONasTSR7f0XJ4wfzNhQrtkwmXtlXUbNk4uO2mFneCyczA%3D">here</a></span>
+        </figure>
+    </div>
+</body>
+
+</html>
